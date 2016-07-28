@@ -3735,7 +3735,7 @@ a.post-thumbnail:hover {
 		background-color: #24890d;
 		border: 0;
 		clear: none;
-		float: left;
+		float: right;
 		margin: 0 0 0 -100%;
 		min-height: 100vh;
 		width: 122px;
