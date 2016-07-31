@@ -3463,6 +3463,7 @@ a.post-thumbnail:hover {
 
 	.masthead-fixed .site-main {
 		margin-top: 48px;
+		margin-left: 23px;
 	}
 
 	/* Navigation */
@@ -3732,7 +3733,7 @@ a.post-thumbnail:hover {
 	}
 
 	#secondary {
-		background-color: #24890d;
+		background-color: #353453;
 		border: 0;
 		clear: none;
 		float: left;
@@ -4146,6 +4147,7 @@ a.post-thumbnail:hover {
 	.full-width .site-content .entry-summary,
 	.full-width .site-content footer.entry-meta {
 		margin-right: auto;
+		float: left;
 	}
 }
 
