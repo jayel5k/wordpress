@@ -1,13 +1,13 @@
 /*
-Theme Name: Twenty Fourteen
+Theme Name: 2014
 Theme URI: https://wordpress.org/themes/twentyfourteen/
 Author: the WordPress team
 Author URI: https://wordpress.org/
 Description: In 2014, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier.
-Version: 1.6
+Version: 1.8
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Tags: blog, news, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
 Text Domain: twentyfourteen
 
 This theme, like WordPress, is licensed under the GPL.
@@ -347,6 +347,7 @@ figure {
 fieldset {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	margin: 0 0 24px;
+	min-width: inherit;
 	padding: 11px 12px 0;
 }
 
@@ -2170,7 +2171,7 @@ a.post-thumbnail:hover {
 /* Primary Sidebar */
 
 .primary-sidebar {
-	padding-top: 4899px;
+	padding-top: 48px;
 }
 
 .secondary-navigation + .primary-sidebar {
@@ -3268,7 +3269,7 @@ a.post-thumbnail:hover {
 	}
 
 	.list-view .site-content .hentry {
-		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		border-top: 10px solid rgba(0, 0, 0, 0.1);
 		padding-top: 48px;
 	}
 
@@ -3454,7 +3455,6 @@ a.post-thumbnail:hover {
 	.masthead-fixed .site-header {
 		position: fixed;
 		top: 0;
-		background-color: #353453;
 	}
 
 	.admin-bar.masthead-fixed .site-header {
@@ -3463,7 +3463,6 @@ a.post-thumbnail:hover {
 
 	.masthead-fixed .site-main {
 		margin-top: 48px;
-		margin-left: 23px;
 	}
 
 	/* Navigation */
@@ -3542,7 +3541,7 @@ a.post-thumbnail:hover {
 		white-space: normal;
 		width: 176px;
 	}
-
+/*header menu*/
 	.primary-navigation li:hover > a,
 	.primary-navigation li.focus > a {
 		background-color: #24890d;
@@ -3733,7 +3732,7 @@ a.post-thumbnail:hover {
 	}
 
 	#secondary {
-		background-color: #353453;
+		background-color: transparent;
 		border: 0;
 		clear: none;
 		float: left;
@@ -4143,11 +4142,13 @@ a.post-thumbnail:hover {
 	.full-width .page-content,
 	.full-width .post-navigation,
 	.full-width .site-content .entry-header,
-	.full-width .site-content .entry-content,
 	.full-width .site-content .entry-summary,
 	.full-width .site-content footer.entry-meta {
-		margin-right: auto;
 		float: left;
+	}
+
+	.full-width .site-content .entry-content{
+		margin-right: right;
 	}
 }
 
@@ -4322,4 +4323,3 @@ a.post-thumbnail:hover {
 		line-height: 36px;
 	}
 }
-

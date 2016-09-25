@@ -1,5 +1,5 @@
 <div id="footer">
-<h1>FOOTER</h1>
+<h1>develop by JAyel Mascarinas</h1>
 </div>
 </div>
 </body>

@@ -22,16 +22,17 @@ border: 2px #a2a2a2 solid;
 background-color: #450980;
 }
 #content { 
-width: 75%; 
+width: 73%; 
 border: 2px #a2a2a2 solid; 
 float: left; 
 background-color: #894020;
 }
 #sidebar { 
-width: 23%; 
+width: 25%; 
 border: 2px #a2a2a2 solid; 
 float: right; 
 background-color: #945309;
+margin-right: 8px;
 }
 #delimiter { 
 clear: both; 

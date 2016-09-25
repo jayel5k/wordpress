@@ -6,5 +6,5 @@
 <body>
 <div id="wrapper">
 <div id="header">
-<h1>HEADER</h1>
+<h1>Sports news</h1>
 </div>
