@@ -13,6 +13,30 @@
 
 get_header(); ?>
 
+<?php
+		
+		if ( has_children() OR $post->post_parent > 0 ) { ?>
+
+
+	<nav id="primary-navigation2" class="site-navigation primary-navigation" role="navigation">
+					<span class="parent-link"><a href="<?php echo get_the_permalink(get_top_ancestor_id()); ?>"></a></span>
+
+				<ul>
+					<?php
+
+					$args = array(
+						'child_of' => get_top_ancestor_id(),
+						'title_li' => ''
+					);
+
+					?>
+
+					<?php wp_list_pages($args); ?>
+				</ul>
+	</nav>
+
+		<?php } ?>
+
 <div id="main-content" class="main-content">
 <?php
 	if ( is_front_page() && twentyfourteen_has_featured_posts() ) {
